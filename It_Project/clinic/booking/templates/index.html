@@ -1,0 +1,121 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    /* Styles for the body element */
+    body {
+      background-color: #ffff !important;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    /* Styles for the hero section */
+    .bg-secondary {
+      background-color: #9c1c1c;
+      color: #fff;
+      padding: 50px 0;
+    }
+    
+    .cGreen {
+      color: #4CAF50;
+    }
+    
+    .btn-primary {
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    
+    .btn-primary:hover {
+      background-color: #3e8e41;
+      border-color: #3e8e41;
+      color: #fff;
+    }
+    
+    .display-1 {
+      font-size: 72px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .fs-4 {
+      font-size: 24px;
+      margin: 0;
+    }
+    
+    .mt-3 {
+      margin-top: 15px;
+    }
+    
+    .mt-5 {
+      margin-top: 50px;
+    }
+    
+    .pt-5 {
+      padding-top: 50px;
+    }
+    
+    .pb-5 {
+      padding-bottom: 50px;
+    }
+    
+    .shadow {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Center text within the hero section */
+    .text-center {
+      text-align: center;
+    }
+    
+    /* Add margin to the top and bottom of the hero section */
+    .pt-5 {
+      padding-top: 50px;
+    }
+    
+    .pb-5 {
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hi">
+  <!--Hero 1 Start-->
+  <div class="bg bg-success text-dark pt-5 pb-5">
+    <div class="text-center  pt-5 pb-5">
+      <h1 class="display-1  me-2 ms-2">Book Appointment</h1>
+      <p class="fs-4 mt-3">Welcome to Step by Step by KMC Manipal</p>
+      <a type="button" class="btn btn-primary shadow  mt-5" href="{% url 'booking' %}">Online Booking</a>
+    </div>
+  </div>
+  <!--Hero 1 End-->
+  </div>
+</body>
+</html>
+  <!--Hero 1 Start-->
+
+    <!-- <div class="bg bg-secondary text-dark pt-5 pb-5">
+        <div class="text-center  pt-5 pb-5">
+            <h1 class="display-1 cGreen me-2 ms-2">Book Appointment</h1>
+            <p class="fs-4 mt-3">Example Text</p>
+            <a type="button" class="btn btn-primary shadow  mt-5" href="{% url 'booking' %}">Online Booking</a>
+        </div>
+    </div> -->
+
+  <!--Hero 1 End-->
+
+{% endblock %}
